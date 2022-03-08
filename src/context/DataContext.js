@@ -4,7 +4,7 @@ export const DataContext = createContext();
 
 export const DataProvider = ({ children }) => {
 	//  darkMode is used to tell the styled components what colors have to use
-	const [darkMode, setDarkMode] = useState("");
+	const [darkMode, setDarkMode] = useState("light");
 	const [hour, setHour] = useState(new Date().getHours());
 
 	useEffect(() => {
