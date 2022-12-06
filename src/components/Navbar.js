@@ -63,6 +63,7 @@ const Nav = styled.div`
 	justify-content: space-between;
 	align-items: flex-center;
 	background-color: ${({ theme }) => theme.cardColor};
+	backdrop-filter: blur(8px);
 	padding: 10px 20px;
 	color: ${({ theme }) => theme.text};
 	transition: 0.5s all ease-in;

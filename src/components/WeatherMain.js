@@ -128,10 +128,12 @@ const Weather = styled.div`
 		justify-content: space-between;
 		align-items: center;
 		background-color: ${({ theme }) => theme.cardColor};
+		backdrop-filter: blur(8px);
 		border-radius: 7px;
 		transition: 0.5s all ease-in;
 
 		@media screen and (max-width: 640px) {
+			width: 97%;
 			flex-direction: column-reverse;
 			align-items: center;
 		}
@@ -195,12 +197,21 @@ const Details = styled.div`
 	width: 80%;
 	margin: auto;
 	background-color: ${({ theme }) => theme.cardColor};
+	backdrop-filter: blur(8px);
 	border-radius: 7px;
 	padding: 50px;
 	transition: 0.5s all ease-in;
+
+
 	div {
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
 	}
+
+	@media screen and (max-width: 640px) {
+			width: 97%;
+			padding: 8px;
+		}
+
 `;

@@ -27,6 +27,7 @@ const Container = styled.div`
 
 	background-size: cover;
 	transition: 0.5s all ease-in;
+	height: 100vh;
 
 	@media screen and (min-width: 700px) {
 		height: 100vh;
